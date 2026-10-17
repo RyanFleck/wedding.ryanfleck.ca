@@ -107,6 +107,16 @@
           overflow: hidden;
       }
 
+      .bg-static-img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          transform: translate(-50%, -50%);
+      }
+
       .main-content {
           
       }
@@ -119,7 +129,9 @@
   <body class="castoro-regular bg-tan lh-copy">
 
 
-    <div class="together zero bg-static"></div>
+    <div class="zero bg-static">
+      <img src="/bg.jpg" class="bg-static-img">
+    </div>
 
     <div class="zero">
       <div class="overlay zero ph3 pv4 bg-white-60">
@@ -216,11 +228,17 @@
         <div class="seal-padding"></div>
 
 
-        <!-- Copyright Link -->
-        <p><a class="link o-40" 
+        <!-- Copyright Link & Information-->
+        <p class="black o-40">
+
+          <a class="link black" 
               rel="noopener"
               target="_blank"
-              href="https://ryanfleck.ca">&copy; Ryan Fleck 2026</a></p>
+              href="https://ryanfleck.ca">&copy; Ryan Fleck 2026</a>
+
+          - Version 3.1
+
+        </p>
 
 
 
