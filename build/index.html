@@ -82,8 +82,14 @@
           max-width: 200px;
           max-height: 200px;
           display: block;
-          margin-bottom: -200px;
+          margin-bottom: -100px;
           float: right;
+      }
+
+      @media screen and (max-width: 960px) {
+          .seal {
+              margin-bottom: -70px;
+          }
       }
 
       .seal-padding {
@@ -91,18 +97,37 @@
           height: 80vh;
       }
 
+      .bg-static {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          z-index: -1;
+          overflow: hidden;
+      }
+
+      .main-content {
+          
+      }
+      
+
     </style>
 
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
   </head>
   <body class="castoro-regular bg-tan lh-copy">
-    <div class="together zero">
+
+
+    <div class="together zero bg-static"></div>
+
+    <div class="zero">
       <div class="overlay zero ph3 pv4 bg-white-60">
 
 
         <!-- Dessert -->
 
-        <div class=" center mw7 mv4">
+        <div class=" center mw7 mv4 main-content">
           <img src="/dessert.png" class="db br3 shadow-4">
         </div>
 
